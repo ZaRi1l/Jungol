@@ -20,6 +20,8 @@ public class Main {
 			if (nums[i] == 0) continue;
 			System.out.print(nums[i] + " ");
 		}
+		
+		sc.close();
 	}
 
 }
