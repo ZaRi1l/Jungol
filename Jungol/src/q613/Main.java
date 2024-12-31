@@ -12,9 +12,9 @@ public class Main {
 		st.school = sc.next();
 		st.grade = sc.nextInt();
 		
-		System.out.println("Name: " + st.name);
-		System.out.println("School: " + st.school);
-		System.out.println("Grade: " + st.grade);
+		System.out.println("Name : " + st.name);
+		System.out.println("School : " + st.school);
+		System.out.println("Grade : " + st.grade);
 	}
 
 }
