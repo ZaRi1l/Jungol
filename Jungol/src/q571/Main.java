@@ -8,12 +8,16 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 		int a = sc.nextInt();
 		
-		for (int i=0; i < a; i++) {
-			System.out.println("~!@#$^&*()_+|");
-		}
+		print3(a);
 		
 		sc.close();
 		
+	}
+	
+	public static void print3(int a) {
+		for (int i=0; i < a; i++) {
+			System.out.println("~!@#$^&*()_+|");
+		}
 	}
 
 }
