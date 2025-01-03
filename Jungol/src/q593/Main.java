@@ -14,6 +14,7 @@ public class Main {
 			if (n < 33 || n > 127) break;
 			
 			System.out.printf("%c\n" , n);
+			// System.out.print((char)n + "\n");
 		}
 		
 		sc.close();
