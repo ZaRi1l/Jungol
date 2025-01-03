@@ -6,7 +6,11 @@ public class Main {
 		int height = 170;
 		double weight = 68.6;
 		
-		System.out.printf("My height\n%d\nMy weight\n%.6f", height, weight);
+		System.out.printf("My height\n" 
+		+ "%d\n" 
+		+ "My weight\n" 
+		+ "%.6f"
+		, height, weight);
 	}
 
 }
