@@ -18,7 +18,6 @@ public class Main {
 			nums[i] = Integer.parseInt(st.nextToken());
 		}
 
-		Arrays.sort(nums);
 		int max = 0;
 		int min = 10000;
 
