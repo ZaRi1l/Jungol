@@ -19,9 +19,7 @@ public class Main {
 
 		Arrays.sort(n); // 오름차순 정렬
 
-//		for (int i = 0; i < n.length; i++) {
-//			System.out.println(n[i]);
-//		}
+		StringBuffer sb = new StringBuffer(); // 스트링 버퍼
 
 		int tenb = 0; // 전에 10의 자리 숫자
 		int tena = 0; // 후에 10의 자리 숫자
@@ -34,14 +32,13 @@ public class Main {
 				if (tena == tenb) {
 					n[i] = n[i - 1] + 1; // 전에 거와 같으면 1더해서 넣어주기
 				} else {
-					n[i] = 1;		// 아니라면 1넣어주기 그리고 전에 거 출력
-					System.out.println(tenb + " : " + n[i - 1]);
+					n[i] = 1; // 아니라면 1넣어주기 그리고 전에 거 출력
+					sb.append(tenb).append(" : ").append(n[i - 1]).append('\n');
 				}
 			}
 			tenb = tena;
-			if (i == n.length - 1) {
-				System.out.println(tenb + " : " + n[i]);
-			}
 		}
+		sb.append(tenb).append(" : ").append(n[n.length - 1]);
+		System.out.print(sb);
 	}
 }
