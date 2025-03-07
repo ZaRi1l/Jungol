@@ -59,6 +59,7 @@ public class Main {
 				for (int j = 0; j < idx; j++) {
 					if (i == dice[j]) {
 						in = true;
+						break;
 					}
 				}
 				if (in)
