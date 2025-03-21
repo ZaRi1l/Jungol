@@ -13,7 +13,7 @@ public class Main {
 		int c = Integer.parseInt(br.readLine().trim());
 		br.close();
 
-		Integer res = a * b * c;
+		int res = a * b * c;
 		int[] num = new int[10];
 
 		int div = 1;
