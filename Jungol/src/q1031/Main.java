@@ -62,8 +62,10 @@ public class Main {
 		for (int i = 0; i < bing.length; i++) {
 			boolean line = true;	// 확인용 변수 
 			for (int j = 0; j < bing[i].length; j++) {
-				if (bing[i][j] != 0)
+				if (bing[i][j] != 0) {
 					line = false;	// 하나라도 0이 아니면 false
+					break;
+				}
 			}
 			if (line)	// line이 그대로 true 이면 row + 1
 				row += 1;
@@ -73,8 +75,10 @@ public class Main {
 		for (int i = 0; i < bing.length; i++) {
 			boolean line = true;
 			for (int j = 0; j < bing[i].length; j++) {
-				if (bing[j][i] != 0)
+				if (bing[j][i] != 0) {
 					line = false;
+					break;
+				}
 			}
 			if (line)
 				col += 1;
